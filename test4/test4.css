@@ -1,0 +1,61 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;    
+}
+
+.hero-image {
+    padding: 10px;    
+}
+
+.hero-image img {    
+    max-width: 100%;
+    height: auto;
+}
+
+.featured {
+    padding: 10px;
+}
+
+.featured::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.featured .item {
+    padding: 10px;
+    text-align: center;
+}
+
+.featured .item span {
+    display: block;
+    font-size: 3em;    
+    background-color: beige;    
+}
+
+
+/*-------------------------------
+Tablet display
+---------------------------------*/
+@media screen and (min-width: 768px) {
+    .featured .item {
+        float: left;        
+        width: 50%;        
+    }
+}
+
+/*-------------------------------
+Desktop display
+---------------------------------*/
+@media screen and (min-width: 1024px) {
+    .hero-image {
+        float: left;
+        width: 40%;
+    }
+
+    .featured {
+        float: left;
+        width: 60%;
+    }
+}
