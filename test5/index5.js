@@ -9,7 +9,10 @@ $(function() {
    $(".frame2").droppable({      
       accept: '.item' ,
       greedy: true,
-      hoverClass: "dragover"
+      hoverClass: "dragover",
+      drop: function(e, ui) {
+         $(this).append(ui.draggable);
+      }
    });
 
    $('#btnGetCSS').on('click', function(e) {
