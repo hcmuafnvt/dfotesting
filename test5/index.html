@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Test 5</title>
+   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> 
+   <style>
+      .frame {
+         width: 300px;
+         height: 400px;
+         border: 1px solid #000;
+         float: left;
+         margin-right: 50px;
+      }
+
+      .frame2.dragover {
+         border: 2px dashed greenyellow;
+      }
+      
+      .item {
+         width: 50px;
+         height: 50px;
+         position: absolute;         
+      }
+
+      .item1 {
+         background-color: bisque;
+      }
+
+      .item2 {
+         background-color: aqua;
+         margin-left: 100px;
+      }
+
+      /* .css-content {
+         min-width: 200px;
+         height: auto;
+      } */
+   </style>
+
+   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+   <div class="frame frame1">
+      <div id="item1" class="item item1">Item 1</div>
+      <div id="item2" class="item item2">Item 2</div>
+   </div>
+   <div class="frame frame2"></div>
+
+   <div class="css-container">
+      <button id="btnGetCSS" type="button">Get all css</button>
+      <div id="cssContent"></div>
+   </div>
+   
+
+   <script src="index.js"></script>
+</body>
+
+</html>
